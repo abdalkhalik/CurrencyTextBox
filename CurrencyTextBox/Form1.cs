@@ -16,5 +16,12 @@ namespace CurrencyTextBox
         {
             InitializeComponent();
         }
+
+        private void currencyTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Text : " + currencyTextBox1.Text);
+            System.Diagnostics.Debug.WriteLine("Number : " + currencyTextBox1.TextasNumber);
+
+        }
     }
 }

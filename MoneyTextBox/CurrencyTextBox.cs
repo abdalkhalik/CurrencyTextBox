@@ -13,7 +13,7 @@ namespace MoneyTextBox
     public partial class CurrencyTextBox : TextBox
     {
         private decimal _textNumber = 0;
-        private string _currencySymbol = "$";
+        private string _currencySymbol = "";
         private int cursorPosition = 0;
         private bool AllowEvent = true;
         /// <summary>
@@ -44,15 +44,15 @@ namespace MoneyTextBox
         {
             try
             {
+                this.TextasNumber = this.Text.Any(Char.IsDigit) ? Convert.ToDecimal(new string(this.Text.Where(Char.IsDigit).ToArray())) : 0;
+
                 if (!String.IsNullOrEmpty(this.Text) && AllowEvent)
                 {
-                    this.TextasNumber = Convert.ToDecimal(new string(this.Text.Where(Char.IsDigit).ToArray()));
-
                     cursorPosition = this.SelectionStart;
                     int countCommas = this.Text.LastIndexOf(',');
 
                     AllowEvent = false;
-                    this.Text = string.Format("{0:n0}", Convert.ToDecimal(this.TextasNumber)) ;
+                    this.Text = string.Format("{0:n0}", Convert.ToDecimal(this.TextasNumber)) + CurrencySymbol;
                     AllowEvent = true;
 
                     this.SelectionStart = countCommas >= this.Text.LastIndexOf(',') ? cursorPosition : cursorPosition + 1;
