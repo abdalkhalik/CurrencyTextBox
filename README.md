@@ -1,4 +1,4 @@
-# CurrencyTextBox
+# Currency TextBox for .NET WinForms
 
 - Download the Project and run CurrencyTextBox Demo
 
