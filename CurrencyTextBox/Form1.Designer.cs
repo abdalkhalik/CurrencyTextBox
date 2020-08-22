@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.currencyTextBox1 = new MoneyTextBox.CurrencyTextBox();
+            this.SuspendLayout();
+            // 
+            // currencyTextBox1
+            // 
+            this.currencyTextBox1.Location = new System.Drawing.Point(230, 168);
+            this.currencyTextBox1.Name = "currencyTextBox1";
+            this.currencyTextBox1.Size = new System.Drawing.Size(318, 24);
+            this.currencyTextBox1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(827, 286);
+            this.Controls.Add(this.currencyTextBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private MoneyTextBox.CurrencyTextBox currencyTextBox1;
     }
 }
 

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyTextBox", "CurrencyTextBox\CurrencyTextBox.csproj", "{B759781F-82B3-49E4-BE51-1ACEF909D6B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyTextBoxDemo", "CurrencyTextBox\CurrencyTextBoxDemo.csproj", "{B759781F-82B3-49E4-BE51-1ACEF909D6B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTextBox", "MoneyTextBox\MoneyTextBox.csproj", "{3A118A39-1734-4175-855E-112E50040C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B759781F-82B3-49E4-BE51-1ACEF909D6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B759781F-82B3-49E4-BE51-1ACEF909D6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B759781F-82B3-49E4-BE51-1ACEF909D6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A118A39-1734-4175-855E-112E50040C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A118A39-1734-4175-855E-112E50040C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A118A39-1734-4175-855E-112E50040C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A118A39-1734-4175-855E-112E50040C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
